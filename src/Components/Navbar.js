@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <>
 
-            <nav class="navbar navbar-expand-lg bg-black mb-3 py-2">
+            <nav class="navbar navbar-expand-lg bg-black py-2">
                 <div class="container-fluid">
                     <div className="navbar-image">
                         <Link to="/" className="navbar-brand">

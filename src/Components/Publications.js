@@ -10,8 +10,8 @@ function Publications() {
                             <h1 className='research-articles'>Research Articles</h1>
                             <hr />
                             <br />
-                            <p className='publications-details'>
-                                <span>1.</span> <a href="https://www.tandfonline.com/doi/full/10.1080/10106049.2022.2142958" target='_blank'>Assessing the vulnerability of watersheds to environmental degradation in the lesser Himalayan region using satellite data and a series of models</a></p>
+                            <p className='publications-details text-black'>
+                                <span>1.</span> <a href="https://www.tandfonline.com/doi/full/10.1080/10106049.2022.2142958" target='_blank' className=''>Assessing the vulnerability of watersheds to environmental degradation in the lesser Himalayan region using satellite data and a series of models</a></p>
                             <p className='authors'>Authors: Pankaj Chauhan, <strong>Darshan Malviya</strong>, Kalachand Sain, Ram L. Ray, Sudhir Kumar Singh & Dharmaveer Singh</p>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ function Publications() {
                                 Seven days workshop organized by the Department of Hydrology, IIT Roorkee
                                 from 20th August 2023 to 26th August 2023. Its main objective was to teach
                                 students about the application of Artificial intelligence in water resources.</p>
-                                
+
                             <p className='training-details'>
                                 <span>2.</span> <span>TopoToolbox</span>
                                 <br />

@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css */
+.sidebar {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+}
+.sidebar .nav-link {
+  color: #adb5bd; /* Default text color */
+}
+
+.sidebar .nav-link.active-link {
+  background-color: white; /* Background color when active */
+  color: #000 !important; /* Text color when active */
+  border-radius: 4px; /* Optional: Add border radius for a rounded effect */
+}

@@ -49,6 +49,19 @@ const Admin = () => {
                 Gallery
               </Nav.Link>
             </Nav.Item>
+            <hr className="my-2" /> {/* Divider */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/admin/contacts"
+                active={location.pathname === "/admin/contacts"}
+                className={
+                  location.pathname === "/admin/contacts" ? "active-link" : ""
+                }
+              >
+                Contacts
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Col>
 

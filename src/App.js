@@ -1,7 +1,7 @@
 // src/App.js
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Contact from "./Components/Contact";
+import Contact from "./Components/Contact/Contact";
 import Gallery from "./Components/Gallery";
 import Publications from "./Components/Publications";
 import Home from "./Components/Home";
@@ -15,6 +15,7 @@ import { AuthProvider } from "./context/AuthContext";
 import Blogs from "./Components/Blogs/Blog";
 import Tutorials from "./Components/Tutorials/Tutorials";
 import GalleryList from "./Components/Gallery/Gallery";
+import ContactList from "./Components/Contact/ContactList";
 // import PrivateRoute from "./Components/PrivateRoute"; // Assuming you created this to protect the admin route
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="blogs" element={<Blogs />} />
             <Route path="tutorials" element={<Tutorials />} />
             <Route path="gallery" element={<GalleryList />} />
+            <Route path="contacts" element={<ContactList />} />
           </Route>
         </Routes>
         <Footer />

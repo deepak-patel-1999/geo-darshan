@@ -13,7 +13,6 @@ export const AuthProvider = ({ children }) => {
   // Simulate login state (replace this with real authentication logic)
   const user = localStorage.getItem("user"); // Check if user is logged in (can use token, etc.)
   useEffect(() => {
-    console.log("use => V", user);
     if (user) {
       setIsLoggedIn(true);
     }

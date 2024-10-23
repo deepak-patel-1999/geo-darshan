@@ -22,3 +22,11 @@ export const updateBlog = async (id, blog) => {
 export const deleteBlog = async (id) => {
   return apiHandler(`${API_URL}/${id}`, "DELETE");
 };
+
+export const getVisitorCounts = async () => {
+  return apiHandler(`/visitors`, "GET");
+};
+
+export const updateVisitorCounts = () => {
+  return apiHandler(`/visitors`, "PUT");
+};

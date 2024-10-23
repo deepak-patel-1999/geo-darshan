@@ -1,11 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { fetchBlogs } from "./Blogs/api/blogs";
+import { fetchBlogs, updateVisitorCounts } from "./Blogs/api/blogs";
 
 import "./style.css";
 import { serverUrl } from "../utils/apiHandler";
 
 function Home() {
   const [blogs, setBlogs] = useState([]);
+  const [isVisitorCount, setIsVisitorCount] = useState(true);
+
+  useEffect(() => {
+    if (isVisitorCount) {
+      const updateVisitorCount = async () => {
+        try {
+          await updateVisitorCounts();
+          setIsVisitorCount(false);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+
+      updateVisitorCount();
+    }
+  }, [isVisitorCount]);
 
   useEffect(() => {
     const loadBlogs = async () => {
@@ -19,7 +35,6 @@ function Home() {
 
     loadBlogs();
   }, []);
-  console.log("blogs  => ", blogs);
   return (
     <>
       <div className="mainHomeContainer">

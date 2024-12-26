@@ -147,7 +147,7 @@ function Contact() {
 
             <div className="map-container m-5">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.396484208661!2d77.5632707743516!3d29.939272223548254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ec1f14184a309%3A0xb8a8ac9ce784e2ca!2sIndian%20institute%20of%20technology%20Roorkee%20Saharanpur%20campus!5e0!3m2!1sen!2sin!4v1720261508139!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13839.709000830024!2d77.88253977690864!3d29.86637183317701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3650bfe37a7%3A0xa9d19b15af050467!2sIndian%20Institute%20Of%20Technology%20Roorkee!5e0!3m2!1sen!2sin!4v1730307991306!5m2!1sen!2sin"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}

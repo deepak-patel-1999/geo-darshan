@@ -13,6 +13,10 @@ function Publications() {
                             <p className='publications-details text-black'>
                                 <span>1.</span> <a href="https://www.tandfonline.com/doi/full/10.1080/10106049.2022.2142958" target='_blank' className=''>Assessing the vulnerability of watersheds to environmental degradation in the lesser Himalayan region using satellite data and a series of models</a></p>
                             <p className='authors'>Authors: Pankaj Chauhan, <strong>Darshan Malviya</strong>, Kalachand Sain, Ram L. Ray, Sudhir Kumar Singh & Dharmaveer Singh</p>
+
+                            <p className='publications-details text-black'>
+                                <span>2.</span> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zIfV30YAAAAJ&citation_for_view=zIfV30YAAAAJ:d1gkVwhDpl0C" target='_blank' className=''>Identification of groundwater recharge potential zone using geospatial approaches and multi criteria decision models in Udham Singh Nagar district, Uttarakhand, India</a></p>
+                            <p className='authors'>Manjar Alam, Pankaj Chauhan, Laxmi Narayan Thakural, <strong>Darshan Malviya</strong>, Rizwan Ahmad, Mohammad Sajid</p>
                         </div>
                     </div>
 

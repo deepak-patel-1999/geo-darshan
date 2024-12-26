@@ -30,24 +30,25 @@ function Gallery() {
             <div className="col-12 text-center mb-5">
               <h1 className="border-bottom border-3 pb-2">Gallery</h1>
             </div>
-            {showPopup && <SinglePhoto id={id} setShowPopup={setShowPopup} />}
-
+            {showPopup && <SinglePhoto id={id} setShowPopup={setShowPopup} allPhotos={items || []} />}
+            {console.log("showPopup ", showPopup)}
             <div className="d-flex flex-row justify-content-evenly flex-wrap">
               {items.map((item) => (
                 <div
                   className="card mb-3"
                   style={{ width: "18rem" }}
                   key={item._id}
+                  onClick={() => {
+                    setId(item._id);
+                    setShowPopup(true);
+                  }}
                 >
                   <img
                     src={`${serverUrl}/uploads/${item.image}`}
                     className="card-img-top img-fluid"
                     alt="..."
                     style={{ minHeight: "200px", maxHeight: "200px" }}
-                    onClick={() => {
-                      setId(item._id);
-                      setShowPopup(true);
-                    }}
+
                   />
                   <div class="card-body">
                     <div className="card-text fw-semibold">

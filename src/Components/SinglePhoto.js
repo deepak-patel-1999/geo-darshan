@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
+import { serverUrl } from '../utils/apiHandler';
 
-const SinglePhoto = ({ id, setShowPopup }) => {
-    const allPhotos = useSelector((state) => state.images);
+const SinglePhoto = ({ id, allPhotos, setShowPopup }) => {
+
     const [photoIndex, setPhotoIndex] = useState(0);
     const [initialized, setInitialized] = useState(false);
 
     useEffect(() => {
-        const index = allPhotos.findIndex((photo) => photo.id === id);
+        const index = allPhotos.findIndex((photo) => photo._id === id);
         setPhotoIndex(index);
         setInitialized(true);
     }, [id, allPhotos]);
@@ -19,8 +20,8 @@ const SinglePhoto = ({ id, setShowPopup }) => {
         return null;
     }
 
-    const { src, name, place, description } = allPhotos[photoIndex];
-
+    const { image, name, place, description } = allPhotos[photoIndex];
+    console.log("allPhotos  => ", allPhotos, photoIndex)
     const handleLeftButtonClick = () => {
         const newIndex = (photoIndex - 1 + allPhotos.length) % allPhotos.length;
         setPhotoIndex(newIndex);
@@ -48,7 +49,9 @@ const SinglePhoto = ({ id, setShowPopup }) => {
                             <button type="button" onClick={() => setShowPopup(false)}>
                                 <AiOutlineCloseCircle size={24} color="#fff" />
                             </button>
-                            <img src={src} alt="gallery" />
+                            <img
+                                src={`${serverUrl}/uploads/${image}`}
+                                alt="gallery" />
                         </div>
 
                         <div className="single-photo-detail">
